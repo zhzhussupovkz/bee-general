@@ -10,6 +10,7 @@ class Level
   def initialize window
     @window = window
     @bg = Gosu::Image.new window, 'images/level/background.png', true
+    @panel = Gosu::Image.new window, 'images/level/panel.png', true
     @bee_general = BeeGeneral.new window
     @ui = Gosu::Font.new window, 'Monospace', 20
   end
@@ -19,6 +20,7 @@ class Level
   # draw
   def draw
     @bg.draw 0, 0, 0
+    @panel.draw 0, 540, 1
     @bee_general.draw
     year = (Time.at(Time.now.to_i)).strftime("%Y")
     @ui.draw("Copyright (c) #{year} by zhzhussupovkz", 360, 675, 4)

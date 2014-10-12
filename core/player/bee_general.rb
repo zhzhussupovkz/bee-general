@@ -32,7 +32,7 @@ class BeeGeneral
   end
 
   def move_left
-    @x -= 7.0 if @x >= 25
+    @x -= 7.0 if @x >= 16
   end
 
   def move_right
@@ -40,11 +40,11 @@ class BeeGeneral
   end
 
   def move_up
-    @y -= 7.0 if @y >= 90
+    @y -= 7.0 if @y >= 72
   end
 
   def move_down
-    @y += 7.0 if @y <= 475
+    @y += 7.0 if @y <= 480
   end
 
 end
