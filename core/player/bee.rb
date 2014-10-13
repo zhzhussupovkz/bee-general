@@ -11,6 +11,7 @@ class Bee
     @window, @x, @y = window, 900, 275
     begin
       @image = Gosu::Image.new window, 'images/player/bee.png', true
+      @attack, @power, @stamina = 10, 1, 100
     rescue Exception => e
       puts "#{e.class}: #{e.message}"
     end
