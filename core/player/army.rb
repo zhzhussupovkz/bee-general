@@ -25,4 +25,12 @@ class Army
     @soldiers.each do |e| e.draw end
   end
 
+  #get power
+  def get_power
+    power = 0
+    power += @general.get_power
+    @soldiers.each do |e| power += e.get_power end
+    power
+  end
+
 end

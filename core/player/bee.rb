@@ -24,4 +24,9 @@ class Bee
     @image.draw x, y, 3
   end
 
+  #get power
+  def get_power
+    @attack*@power
+  end
+
 end

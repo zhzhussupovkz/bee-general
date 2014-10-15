@@ -24,6 +24,11 @@ class BeeGeneral
     @image.draw x, y, 3
   end
 
+  #get power
+  def get_power
+    @attack*@power
+  end
+
   # bee general movement
   def movement
     move_left if window.button_down? Gosu::KbLeft
