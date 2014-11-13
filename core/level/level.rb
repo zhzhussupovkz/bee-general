@@ -13,9 +13,11 @@ class Level
     @panel = Gosu::Image.new window, 'images/level/panel.png', true
     @bee_general = BeeGeneral.new window
     @ui = Gosu::Font.new window, 'Monospace', 20
+    @gold, @honey = 100, 100
   end
 
   attr_reader :window
+  attr_accessor :gold, :honey
 
   # draw
   def draw
